@@ -1,4 +1,4 @@
-## Customer Segmentation (RFM Analysis) and Retention Analysis (2023-2024)
+## Customer Segmentation with RFM Analysis and Retention Analysis (2023-2024)
 
 <p align='center'>
 <img src='image/cover.jpg' width='100%' height='auto'>
@@ -309,10 +309,10 @@ By connectiong when customers leave (Cohort Analysis) with who is valuable (RFM 
 
 ## Tech Stack
 
-| Technology      | Purpose                                         |
-| --------------- | ----------------------------------------------- |
-| PostgreSQL      | Database management and data storage            |
-| DBeaver         | Database administration and SQL query execution |
-| VS Code         | Code editor for SQL scripts and documentation   |
-| Microsoft Excel | Data cleaning and preliminary analysis          |
-| Power BI        | Data visualization and interactive dashboards   |
+| Technology      | Purpose                                                                          |
+| --------------- | -------------------------------------------------------------------------------- |
+| PostgreSQL      | Database management and data storage                                             |
+| DBeaver         | Database administration and SQL query execution for data cleaning and validating |
+| VS Code         | Code editor for SQL scripts and documentation                                    |
+| Microsoft Excel | Deck and Dashboard                                                               |
+| Power BI        | Data visualization and interactive dashboards                                    |
