@@ -24,7 +24,7 @@ WITH cohort AS (
 	SELECT
 		s.customer_id,
 		EXTRACT(YEAR FROM min(s.date)) AS cohort_year,
-		sum(s.quantity * (p.list_price-p.cost_price)) AS customer_ltv_profit
+		round(SUM(quantity * (list_price * (1 - discount) - cost_price)), 0) AS customer_ltv_profit
 	FROM
 		v_sales_cleaned AS s
 	JOIN v_product_cleaned AS p ON
@@ -176,7 +176,8 @@ WITH customer_table AS (
 		sd.region AS store_region,
 		-- Data Transaksi
 		s.quantity,
-		s.returned
+		s.returned,
+		s.discount
 	FROM
 		v_sales_cleaned AS s
 	INNER JOIN v_customer_cleaned AS c ON
@@ -197,7 +198,7 @@ agg_table AS (
 		age_group,
 		round(count(DISTINCT transaction_id), 0) AS total_order,
 		-- frequency value
-		round(sum(quantity *(list_price - cost_price)), 0) AS total_profit,
+		round(SUM(quantity * (list_price * (1 - discount) - cost_price)), 0) AS total_profit,
 		-- monetary_value
 		max(date) AS last_order_date,
 		ROUND(SUM(quantity * list_price) / COUNT(DISTINCT transaction_id), 0) AS avg_order_value,
@@ -285,6 +286,12 @@ SELECT
 FROM
 	rfm_segment;
 
+SELECT
+	count(recency_days) AS recency,
+	sum(total_order) AS frequency,
+	sum(total_profit) AS monetary
+	
+FROM rfm_segment;
 /*deep dive into rfm segmentation analysis*/
 -- 1. berapa banyak customer yang ada dan masuk ke RFM Segmentation (2023-2024)
 SELECT
@@ -302,6 +309,7 @@ ORDER BY
 SELECT
 	rfm_segmentation,
 	sum(total_profit) AS total_profit_segment,
+	round(avg(total_profit),0) AS avg,
 	count(DISTINCT customer_id) AS total_customers,
 	ROUND(SUM(total_profit) * 100.0 / SUM(SUM(total_profit)) OVER (), 2) AS profit_percentage
 FROM
@@ -384,7 +392,7 @@ ORDER BY
 -- 7. berapa profit dari tahun 2023-2024
 SELECT
 	date,
-	round(sum(s.quantity *(p.list_price - p.cost_price)), 0) AS total_profit,
+	round(SUM(quantity * (list_price * (1 - discount) - cost_price)), 0) AS total_profit,
 	round(sum(s.quantity * p.list_price),0) AS total_revenue
 FROM
 	v_sales_cleaned AS s

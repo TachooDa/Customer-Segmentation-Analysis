@@ -102,10 +102,10 @@ ORDER BY product_not_return DESC;
 -- 2. Berapa revenue,cogs,dan profit yang dihasilkan oleh MRF dari tahun 2023-2024
 SELECT
 	-- find the total_revenue / net_revenue
-	round(sum(s.quantity * p.list_price), 0) AS total_revenue,
+	round(SUM(s.quantity * (p.list_price * (1 - s.discount) - p.cost_price)),0) AS total_revenue,
 	-- find the total cost of good sold,
 	round(sum(s.quantity * p.cost_price), 0) AS total_cogs,
-	round(sum(s.quantity * (p.list_price - p.cost_price)), 0) AS total_profit
+	round(SUM(s.quantity * p.list_price * (1 - s.discount) - p.cost_price), 0) AS total_profit
 FROM
 	v_sales_cleaned AS s
 LEFT JOIN v_product_cleaned AS p ON
@@ -120,8 +120,8 @@ SELECT
 	p.category_cleaned,
 	count(DISTINCT s.transaction_id) AS num_transaction,
 	sum(s.quantity) AS total_sale,
-	round(sum(s.quantity * (p.list_price - p.cost_price)),0) AS total_profit,
-	round(sum(s.quantity * p.list_price),0) AS total_revenue
+	round(SUM(s.quantity * (p.list_price * (1 - s.discount) - p.cost_price)),0) AS total_profit,
+	round(SUM(s.quantity * p.list_price * (1 - s.discount)),0) AS total_revenue
 FROM v_sales_cleaned AS s
 JOIN v_product_cleaned AS p ON s.product_id = p.product_id 
 WHERE s.date BETWEEN '2023-01-01' AND '2024-12-31'
@@ -144,8 +144,8 @@ SELECT
 	 sd.store_name,
 	 count(DISTINCT s.transaction_id) AS num_transaction,
 	 sum(s.quantity) AS total_sales,
-	 round(sum(s.quantity * (p.list_price - p.cost_price)),0) AS total_profit,
-	 round(sum(s.quantity * p.list_price),0) AS total_revenue
+	 round(SUM(s.quantity * (p.list_price * (1 - s.discount) - p.cost_price)), 0) AS total_profit,
+	 round(SUM(s.quantity * p.list_price * (1 - s.discount)),0)AS total_revenue
 FROM v_sales_cleaned AS s
 LEFT JOIN store_data AS sd ON s.store_id = sd.store_id
 LEFT JOIN v_product_cleaned AS p ON s.product_id  = p.product_id 
