@@ -129,22 +129,22 @@ Part 3: Combined Insights - Connecting Retention Patterns to customer Value
 
 **2023 Performance:**
 
-- Q1-Q3: steady growth from $404K -> $421K (+4.2%)
-- Q4: Sharp drop to $398K (-5.5%)
-- **Total 2023**: $1,643M
+- Q1-Q3: steady growth from $368K -> $384K (+4.3%)
+- Q4: Sharp drop to $365K (-5.5%)
+- **Total 2023**: $1,451M
 
 **2024 Performance:**
 
-- Q1: Strong recovery to $417K (+4.9% from 2023 Q4)
-- Q2-Q4: Continuous decline -> $386K -> $380K (-8.9% from Q1)
-- **Total 2024**: $1,584M (-3.6% YoY)
+- Q1: Strong recovery to $351K (+3.9% from 2023 Q4)
+- Q2-Q4: Continuous decline -> $352K -> $345K (-8.5% from Q1)
+- **Total 2024**: $1,426M (-1.7% YoY)
 
 **Connecting to Cohort Insights:**
 When we overlay cohort data with profit trends:
 
 1.  **Q4 profit drops align with cohort size decline** -> Fewer new customers = lower revenue potential.
 2.  **Q1 profit spikes coincide with larger cohorts** -> Acquisition volume still drives short-term revenue.
-3.  **Mid-year profit decline (Q3-Q3 2024) matches retention collapse** -> May-Aug 2024 cohorts had 0.67-0.75& retention and contributed minimal revenue.
+3.  **Mid-year profit decline (Q3-Q3 2024) matches retention collapse** -> May-Aug 2024 cohorts had 0.67-0.75% retention and contributed minimal revenue.
 
 **Key Insight**: The business is trappe in a **"Leaky Bucket"** model - constanly needing new customers because existing ones don't return, making revenue entirely dependent on acquisition volume.
 
@@ -164,7 +164,7 @@ When we overlay cohort data with profit trends:
 </tr>
 </table>
 
-**Segment Breakdown**
+**Segment Breakdown**<br>
 
 <p style="font-weight:bold">Connecting to Cohort Churn</p>
 
@@ -172,7 +172,7 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 
 - Most customers make 1-2 purchases then disappear -> classified as "Hibernating" or "Lost".
 - Very few into "Loyal" or "Champions" -> only 19% combined.
-- The small Champion segment (~7%) represent the 3-5% who actually return in cohort analysis
+- The small Champion segment (~6.6%) represent the 3-5% who actually return in cohort analysis
 **This Confirm:** The cohort churn pattern is not just about _timing_ - it's about fundamental customer behavior where the majority are **one-time buyers**
 <hr>
 <h2 align="center" style="font-weight:bold;font-family:consolas">Profit Distribution by RFM Segments</h2>
@@ -180,7 +180,7 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 <tr>
 <td width="50%">
 <h4 align="center">Total Profit by RFM Segmentation</h4>
-<img src='image/prft_cust1.png' alt="aov over time" width="100%" height='auto';/>
+<img src='image/prft_cust1.png' alt="aov over   time" width="100%" height='auto';/>
 </td>
 <td width="50%">
 <h4 align="center">Profit distribution for RFM Segmentation</h4>
@@ -190,69 +190,63 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 </table>
 
 **Business Insight**<br>
-**The Retention Paradox**:
+**The Retention Paradox**:<br>
 
-1.  **Champions (7% Customers) generate 16% of profit**
-    -> High customers lifetime value, but we're failing to create more Champions (cohort analysis shows 95% churn).
-2.  **At-Risk + Hibernating + Lost (60% of customers) generate 54% of profit**
-    -> The business is heavily dependent on customers who already churning or inactive
-    -> This explains why profit is declining in 2024 - we're losing the customers who drive revenue
-3.  **Profit concentration in declining segments = unsustainable model**
-    -> As cohort size shrink (265 -> 1 customers) and retention stays at 3-5%, the pool of "at risk" and "hibernating" customers will eventually run dry.
+1.  **Champions (6.6% Customers) generate 16% of profit**<br>
+    - High customers lifetime value, but we're failing to create more Champions (cohort analysis shows 95% churn).
+2.  **At-Risk + Hibernating + Lost (60% of customers) generate 54% of profit**<br>
+    - The business is heavily dependent on customers who already churning or inactive
+    - This explains why profit is declining in 2024 - we're losing the customers who drive revenue
+3.  **Profit concentration in declining segments = unsustainable model**<br>
+    - As cohort size shrink (265 -> 1 customers) and retention stays at 3-5%, the pool of "at risk" and "hibernating" customers will eventually run dry.
+4.  **Game-Changing Insight: Loyal Customers are Undervalued**<br>
+    - Loyal customers (16.08% of profit) match Champions (16.17%) in total contribution.
+    - With 1,935 Loyal vs 880 Champions, Loyal segment has 2.2x more growth potential.
+    - Increasing Loyal customer spending by just 25% would make them the #1 profit contributor.
+    - Strategy shift: Focus on Loyal → Champion conversion, not just creating Champions from scratch
 
-**After all of this,do you think will answers our cohort question: "Are the 3-5% who return valuable enough to retain ?"**
-**Answer: YES**. Those who become Champions deliver 2.3x more profit per customer than the average. The problem is we create too few of them.
+**After all of this,do you think will answers our cohort question: "Are the 3-5% who return valuable enough to retain ?"**<br>
+**Answer: YES**. Those who become Champions deliver 2.4x more profit per customer than the average. The problem is we create too few of them.
 
 <hr>
 <h2 align="center" style='font-weigh:bold;font-family:consolas'>Integrated Strategic Recommendations</h2>
 
-**1.Fix the first-month experience (Address 95% churn)**
-**Problem**: Cohort analysis shows catastrophic drop-off after first purchase
-**Root Cause**: RFM shows 60% become hibernating/at risk/lost, indicating no engangement post-purchase<br>
-**Actionc**:
+**1.Fix the first-month experience (Address 95% churn)**<br>
+**Problem**: Cohort analysis shows catastrophic drop-off after first purchase.<br>
+**Root Cause**: RFM shows 60% become hibernating/at risk/lost, indicating no engangement post-purchase.<br>
+**Action**:
 
 - Implement 30-60-90 day onboarding program for new customers
 - Trigger personalized follow-ups within 7 days of first purchase
 - Offers 'second purchase incentive' within 14 days (data shows most churn happens in month 1)
 - Survey first-time buyers to identify friction points<br>
-
-**Success Metric**: Increase month-2 retention from 3-5% to 10% by end of Q2 2025
-
 <hr>
 
-**2. Protect and Grow Champions (16% of profit from 7% Customers)**
-**Problem**: Too few customers develop into champions despite their high value
-**Opportunity**: Champions are 2.3x more profitable per customer<br>
+**2. Protect and Grow Champions (16% of profit from 6.6% Customers)**<br>
+**Problem**: Too few customers develop into champions despite their high value<br>
+**Opportunity**: Champions are 2.4x more profitable per customer<br>
 **Actions**:
 
 - Create **VIP loyalty program** exclusive to champion and loyal customers
 - Offer early access to new products, exclusive discounts, or personalized styling
-- Assign didcated account management for top 896 champions.
+- Assign didcated account management for top 880 champions.
 - Analyze purchase pattern of Champions vs one-time buyers to indetify 'Champions indicators'<br>
-
-**Success Metric**: Grow champions segment from 7% to 12% (double current size) by end of 2025
-
 <hr>
 
-**3. Reactivate At-Risk and Hibernating Customers (54% of profit)**
-**Problem**: Over half of profit comes from customers who already disengaging
+**3. Reactivate At-Risk and Hibernating Customers (54% of profit)**<br>
+**Problem**: Over half of profit comes from customers who already disengaging/<br>
 **Urgency**: As cohort size shrink, this revenue source will evaporate<br>
 **Actions**:
 
 - **Win-back champions** for hibernating customers (personalized 'we miss you' offers)
 - **Re-engagement program** for At-Risk customers (exclusive discounts,new product launches)
 - **Segment by past purchase category** send targeted product recommendations
-- Focus reactivations on customers with previous AOVA > $100 (higher ROI potential)<br>
-
-**Success Metric**: Reactivate 15% of Hibernating customers and prevent 25% of At-risk from downgrading to Lost
-
+- Focus reactivations on customers with previous AOV > $100 (higher ROI potential)<br>
 <hr>
 
-**4.Optimize Acquisition Strategy (Address Declining Cohort Size)**
-
-**Problem**: New customers acquisition dropped from 265 (Jan 2023) to 1 (Dec 2024)
-
-**Insight**: RFM shows most acquired customers become one-time buyers anyway
+**4.Optimize Acquisition Strategy (Address Declining Cohort Size)**<br>
+**Problem**: New customers acquisition dropped from 265 (Jan 2023) to 1 (Dec 2024).<br>
+**Insight**: RFM shows most acquired customers become one-time buyers anyway<br>
 **Strategic Shift**: Quality over Quantity
 
 - **Stop mass acquisition campaigns** they create hibernating customers, not champions
@@ -261,31 +255,23 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
   - Fashion enthusiast (social media engagement)
   - Previous brand references indicators
 - **Analyze Q4 Cohorts** (Oct-Dec) which show 5% retention vs 3% average - replicate what works<br>
-**Success Metric**: Reduce CAC (Customer acquisition cost) by 30% while increasing champion conversion rate from 7% to 12%
 <hr>
 
-**5. Address Q2-Q3 Seasonal Weakness**
-
+**5. Address Q2-Q3 Seasonal Weakness**<br>
 **Problem**:
 
 - Cohort analysis: May-Aug 2024 had worst retention (0.67-0.75%)
-- Profit analysis: Q2-Q3 2024 saw continuous decline
-
-**Actions**:
-
+- Profit analysis: Q2-Q3 2024 saw continuous decline.<br>
+  **Actions**:
 - Investigate **operational issues during mid-year** (shipping delays, stock-outs, quality problems)
 - Launch **seasonal campaigns in Q2-Q3** to counteract historical weakness
 - Replicate Q2 2023 success (which had strong profit growth)-analyze what worked
-- Consider mid-year loyalty events (summer sales, exclusive previews) to boost engagement<br>
-**Success Metric**: Achieve Q2-Q3 2025 retention rate of>4% (vs 0.67-0.75% in 2024)
+- Consider mid-year loyalty events (summer sales, exclusive previews) to boost engagement.
 <hr>
 
-**6. Laverage Q4 Acquisition Strength**
-
-**Problem**: Q4 shows better retention (~5%) but profit still drops
-
+**6. Laverage Q4 Acquisition Strength**<br>
+**Problem**: Q4 shows better retention (~5%) but profit still drops<br>
 **Opportunity**: Customers acquired in Q4 have higher quality<br>
-
 **Actions**:
 
 - Double down on Q4 marketing - allocate 40% of annual acquisition budged here
@@ -293,11 +279,9 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 - Extend Q4 engagement into Q1 with 'New Year refresh' campaigns
 - Track Q4 cohorts into 2025 to see if 5% retention sustains<br>
 
-## **Success Metric**: Q4 2025 cohort retention reaches 8% (vs 5% in 2024)
-
 ---
 
-**Conclusion**
+**Conclusion**<br>
 By connectiong when customers leave (Cohort Analysis) with who is valuable (RFM Analysis), we've uncovered that:
 
 - The 3-5% who return become our most profitable customers (Champions)
