@@ -221,9 +221,12 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 <hr>
 <h2 align="center" style='font-weigh:bold;font-family:consolas'>Integrated Strategic Recommendations</h2>
 
-**1.Fix the first-month experience (Address 95% churn)**<br>
-**Problem**: Cohort analysis shows catastrophic drop-off after first purchase.<br>
-**Root Cause**: RFM shows 60% become hibernating/at risk/lost, indicating no engangement post-purchase.<br>
+**1.Fix the first-month experience (Address 95% churn)**
+
+**Problem**: Cohort analysis shows catastrophic drop-off after first purchase.
+
+**Root Cause**: RFM shows 60% become hibernating/at risk/lost, indicating no engangement post-purchase.
+
 **Action**:
 
 - Implement 30-60-90 day onboarding program for new customers
@@ -232,10 +235,19 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 - Survey first-time buyers to identify friction points<br>
 <hr>
 
+<<<<<<< HEAD
 **2. Protect and Grow Champions (16% of revenue from 8% Customers)**<br>
 **Problem**: Too few customers develop into champions despite their high value<br>
 **Opportunity**: : Champions generate 2.6x higher average revenue per customer.<br>
-**Actions**:
+=======
+**2. Protect and Grow Champions (16% of profit from 6.6% Customers)**
+
+**Problem**: Too few customers develop into champions despite their high value
+
+**Opportunity**: Champions are 2.4x more profitable per customer
+
+> > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
+> > > > > > > **Actions**:
 
 - Create **VIP loyalty program** exclusive to champion and loyal customers
 - Offer early access to new products, exclusive discounts, or personalized styling
@@ -254,9 +266,12 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 - Focus reactivations on customers with previous AOV > $100 (higher ROI potential)<br>
 <hr>
 
-**4.Optimize Acquisition Strategy (Address Declining Cohort Size)**<br>
-**Problem**: New customers acquisition dropped from 265 (Jan 2023) to 1 (Dec 2024).<br>
-**Insight**: RFM shows most acquired customers become one-time buyers anyway<br>
+**4.Optimize Acquisition Strategy (Address Declining Cohort Size)**
+
+**Problem**: New customers acquisition dropped from 265 (Jan 2023) to 1 (Dec 2024).
+
+**Insight**: RFM shows most acquired customers become one-time buyers anyway
+
 **Strategic Shift**: Quality over Quantity
 
 - **Stop mass acquisition campaigns** they create hibernating customers, not champions
@@ -267,22 +282,35 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 - **Analyze Q4 Cohorts** (Oct-Dec) which show 5% retention vs 3% average - replicate what works<br>
 <hr>
 
-**5. Address Q2-Q3 Seasonal Weakness**<br>
+**5. Address Q2-Q3 Seasonal Weakness**
+
 **Problem**:
 
 - Cohort analysis: May-Aug 2024 had worst retention (0.67-0.75%)
-- Revenue analysis: Q2-Q3 2024 saw continuous decline.<br>
-  **Actions**:
+  <<<<<<< HEAD
+- # Revenue analysis: Q2-Q3 2024 saw continuous decline.<br>
+- Profit analysis: Q2-Q3 2024 saw continuous decline.
+- > > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
+  > > > > > > > **Actions**:
 - Investigate **operational issues during mid-year** (shipping delays, stock-outs, quality problems)
 - Launch **seasonal campaigns in Q2-Q3** to counteract historical weakness
 - Replicate Q2 2023 success (which had strong revenue growth)-analyze what worked
 - Consider mid-year loyalty events (summer sales, exclusive previews) to boost engagement.
 <hr>
 
+<<<<<<< HEAD
 **6. Laverage Q4 Acquisition Strength**<br>
 **Problem**: Q4 shows better retention (~5%) but revenue still drops<br>
 **Opportunity**: Customers acquired in Q4 have higher quality<br>
-**Actions**:
+=======
+**6. Laverage Q4 Acquisition Strength**
+
+**Problem**: Q4 shows better retention (~5%) but profit still drops
+
+**Opportunity**: Customers acquired in Q4 have higher quality
+
+> > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
+> > > > > > > **Actions**:
 
 - Double down on Q4 marketing - allocate 40% of annual acquisition budged here
 - Analyze what makes Q4 customers different (holiday shoppers vs brand loyalist)
