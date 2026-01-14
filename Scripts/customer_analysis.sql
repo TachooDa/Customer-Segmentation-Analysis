@@ -122,7 +122,7 @@ WITH customer_activity AS (
 		) AS anchor_date
 	FROM
 		v_sales_cleaned
-	WHERE date >= '2023-01-01'
+	WHERE date BETWEEN '2023-01-01' AND '2024-12-31'
 	GROUP BY
 		customer_id
 ),
@@ -190,7 +190,7 @@ WITH customer_table AS (
 		s.date >= '2023-01-01'
 ),
 agg_table AS (
-	-- buat aggregate table untuk cari total_order,profit, dan tanggal terakhir order
+	-- buat aggregate table untuk cari total_order,revenue, dan tanggal terakhir order
 	SELECT
 		customer_id,
 		gender_cleaned,
@@ -198,7 +198,7 @@ agg_table AS (
 		age_group,
 		round(count(DISTINCT transaction_id), 0) AS total_order,
 		-- frequency value
-		round(SUM(quantity * (list_price * (1 - discount) - cost_price)), 0) AS total_profit,
+		round(SUM(quantity * list_price * (1 - discount)),0)AS total_revenue,
 		-- monetary_value
 		max(date) AS last_order_date,
 		ROUND(SUM(quantity * list_price) / COUNT(DISTINCT transaction_id), 0) AS avg_order_value,
@@ -225,7 +225,7 @@ rfm_value AS (
 		-- calculation untuk recency 
 	NTILE(5) OVER(ORDER BY recency_days desc) AS recency,
 		NTILE(5) OVER(ORDER BY total_order) AS frequency,
-		NTILE(5) OVER(ORDER BY total_profit) AS monetary,
+		NTILE(5) OVER(ORDER BY total_revenue) AS monetary,
 		NTILE(3) OVER(ORDER BY avg_order_value) AS avg_order_ntile
 	FROM
 		agg_table
@@ -289,7 +289,7 @@ FROM
 SELECT
 	count(recency_days) AS recency,
 	sum(total_order) AS frequency,
-	sum(total_profit) AS monetary
+	sum(total_revenue) AS monetary
 	
 FROM rfm_segment;
 /*deep dive into rfm segmentation analysis*/
@@ -308,16 +308,16 @@ ORDER BY
 -- 2. Berapa profit yg dihasilkan berdasarkan segment rfm
 SELECT
 	rfm_segmentation,
-	sum(total_profit) AS total_profit_segment,
-	round(avg(total_profit),0) AS avg,
+	sum(total_revenue) AS total_revenue_segment,
+	round(avg(total_revenue),2) AS avg,
 	count(DISTINCT customer_id) AS total_customers,
-	ROUND(SUM(total_profit) * 100.0 / SUM(SUM(total_profit)) OVER (), 2) AS profit_percentage
+	ROUND(SUM(total_revenue) * 100.0 / SUM(SUM(total_revenue)) OVER (), 2) AS revenue_pct
 FROM
 	rfm_segment
 GROUP BY
 	rfm_segmentation
 ORDER BY
-	total_profit_segment DESC;
+	total_revenue_segment DESC;
 -- 3. Identifying the top 5 high value  customers by rfm score
 WITH filter_cust AS (
 	SELECT
@@ -325,7 +325,7 @@ WITH filter_cust AS (
 		customer_city,
 		total_order,
 		last_order_date,
-		total_profit,
+		total_revenue,
 		avg_order_value,
 		rfm_score,
 		rfm_segmentation,
@@ -360,7 +360,7 @@ ORDER BY
 -- 5. Pada customer segementation diatas berasal dari kota apa saja dan profit yang dihasilkan berapa ?
 SELECT 
 	customer_city,
-	sum(total_profit) AS customer_profit,
+	sum(total_revenue) AS revenue,
 	-- berapa masing-masing customer, apa dateng ke store langsung atau melalui online
 	count(DISTINCT customer_id) AS total_customer
 FROM
@@ -368,7 +368,7 @@ FROM
 GROUP BY
 customer_city
 ORDER BY
-	customer_profit DESC,
+	revenue DESC,
 	total_customer DESC;
 -- 6. Dari analisa diatas populasi segmentasi champions dan lost customers dari kota mana saja
 SELECT
@@ -376,7 +376,7 @@ SELECT
 	rfm_segmentation,
 	count(customer_id) AS total_customer,
 	sum(total_order) AS total_vol_order,
-	sum(total_profit) AS total_profit_contributions,
+	sum(total_revenue) AS total_rev_contributions,
 	round(100.0 * count(customer_id) / sum(count(DISTINCT customer_id)) OVER(PARTITION BY rfm_segmentation), 2) AS pct_share_segment
 FROM
 	rfm_segment
@@ -393,7 +393,7 @@ ORDER BY
 SELECT
 	date,
 	round(SUM(quantity * (list_price * (1 - discount) - cost_price)), 0) AS total_profit,
-	round(sum(s.quantity * p.list_price),0) AS total_revenue
+	round(SUM(s.quantity * p.list_price * (1 - s.discount)),0)AS total_revenue
 FROM
 	v_sales_cleaned AS s
 LEFT JOIN v_product_cleaned AS p ON
