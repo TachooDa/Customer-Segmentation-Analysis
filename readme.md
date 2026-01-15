@@ -20,7 +20,7 @@ This dataset cover retail fashion transactions from 2021-2024, but this analysis
 #### Business Question :
 
 <p align='justify' style="font-weight:bold">
-How is customer retention performing, which customer segments contribute most to revenue's during the 2023-2024 period?
+How is customer retention performing, and which customer segments will contribute the most to revenue throughout the 2023-2024 period ?
 </p>
 To answer this comprehensively, we need to understande:
 <ol>
