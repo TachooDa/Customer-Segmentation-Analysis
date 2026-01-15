@@ -210,7 +210,7 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 3.  **Revenue concentration in declining segments = unsustainable model**<br>
     - As cohort size shrink (265 -> 1 customers) and retention stays at 3-5%, the pool of "at risk" and "hibernating" customers will eventually run dry.
 4.  **Game-Changing Insight: Loyal Customers are Undervalued**<br>
-    - Loyal customers (16.95% of revenue) match Champions (16%) in total contribution.
+    - Loyal customers (16.95%/17% of revenue) match Champions (16%) in total contribution.
     - With 1,793 Loyal vs 1031 Champions, Loyal segment has 1.7x more growth potential.
     - Increasing Loyal customer spending by just 25% would make them the #1 revenue contributor.
     - Strategy shift: Focus on Loyal → Champion conversion, not just creating Champions from scratch
@@ -223,99 +223,92 @@ The **60% concentration in Hibernate/At-Risk/Lost** segments directly validates 
 
 **1.Fix the first-month experience (Address 95% churn)**
 
-**Problem**: Cohort analysis shows catastrophic drop-off after first purchase.
+**Problem**: Cohort analysis shows reveals a dramatic drop-off after the initial purchase.
 
-**Root Cause**: RFM shows 60% become hibernating/at risk/lost, indicating no engangement post-purchase.
+**Root Cause**: RFM demonstrate that 60% go into hibernating/at risk/lost, that show there is no engangement after purchase.
 
 **Action**:
 
-- Implement 30-60-90 day onboarding program for new customers
-- Trigger personalized follow-ups within 7 days of first purchase
-- Offers 'second purchase incentive' within 14 days (data shows most churn happens in month 1)
-- Survey first-time buyers to identify friction points<br>
+- Implement a 30-to-90 day onboarding program for new customers.
+- Send personalized follow-ups within 7 days of the first transaction.
+- Offers a'second purchase incentive' within 14 days (data reveals most churn occurs in the first month).
+- Survey first-time buyers to identify friction issues.
+
 <hr>
 
-<<<<<<< HEAD
-**2. Protect and Grow Champions (16% of revenue from 8% Customers)**<br>
-**Problem**: Too few customers develop into champions despite their high value<br>
-**Opportunity**: : Champions generate 2.6x higher average revenue per customer.<br>
-=======
-**2. Protect and Grow Champions (16% of profit from 6.6% Customers)**
+**2. Protect and Grow Champions (16% of profit from 8% Customers)**
 
 **Problem**: Too few customers develop into champions despite their high value
 
-**Opportunity**: Champions are 2.4x more profitable per customer
+**Root Cause**: Customers cannot become high-value champions due to a lack of differentiated experiences and clear growth pathways
 
-> > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
-> > > > > > > **Actions**:
-
-- Create **VIP loyalty program** exclusive to champion and loyal customers
-- Offer early access to new products, exclusive discounts, or personalized styling
-- Assign didcated account management for top 1031 champions.
-- Analyze purchase pattern of Champions vs one-time buyers to indetify 'Champions indicators'<br>
-<hr>
-
-**3. Reactivate At-Risk,Lost and Hibernating Customers (53% of revenue)**<br>
-**Problem**: Over half of revenue comes from customers who already disengaging/<br>
-**Urgency**: As cohort size shrink, this revenue source will evaporate<br>
 **Actions**:
 
-- **Win-back champions** for hibernating customers (personalized 'we miss you' offers)
-- **Re-engagement program** for At-Risk customers (exclusive discounts,new product launches)
-- **Segment by past purchase category** send targeted product recommendations
-- Focus reactivations on customers with previous AOV > $100 (higher ROI potential)<br>
+- Create VIP loyalty program for champions and loyal customers.
+- Provide early access to new products, exceptional savings, or customized style.
+- Assign didcated account management to the top 1031 champions.
+- Analyze the buying patterns of champions vs. one-time buyers to identify ‘Champions indications’
+<hr>
+
+**3. Reactivate At-Risk,Lost and Hibernating Customers (53% of revenue)**
+
+**Problem**: More than half of revenue comes from customers who are already disengaged.
+
+**Root Cause**: Without proactive retention strategies, valuable customers can disengage unnoticed, resulting in income loss.
+
+**Actions**:
+
+- Create bespoke ‘we miss you’ offers to re-engage hibernating consumers.
+- Re-engagement program for at-risk clients includes exclusive discounts and new product releases
+- Segment by prior purchase category and deliver tailored product recommendations.
+- Reactivate consumers with a previous AOV of $100 or more (greater ROI potential)
+
 <hr>
 
 **4.Optimize Acquisition Strategy (Address Declining Cohort Size)**
 
-**Problem**: New customers acquisition dropped from 265 (Jan 2023) to 1 (Dec 2024).
+**Problem**: New customers acquisition dropped from 265 in January 2023 to 1 in December 2024
 
-**Insight**: RFM shows most acquired customers become one-time buyers anyway
+**Root Cause**: The current acquisition technique draws low-quality leads who do not want to become repeat customers
 
-**Strategic Shift**: Quality over Quantity
+**Strategic Shift**: Prioritize Quality over Quantity
 
-- **Stop mass acquisition campaigns** they create hibernating customers, not champions
-- **Focus on targeted acquisition** of customers who match champion profiles:
-  - Higher income demographics
-  - Fashion enthusiast (social media engagement)
+- Avoid mass acquisition initiatives as they often result in dissatisfied customers rather than loyal supporters.
+- Target customers with champions profiles:
+  - Higher income populations.
+  - Fashion fanatic (social media engagement)
   - Previous brand references indicators
-- **Analyze Q4 Cohorts** (Oct-Dec) which show 5% retention vs 3% average - replicate what works<br>
+- Analyze Q4 Cohorts (Oct-Dec) which show 5% retention vs 3% average - duplicate what works
+
 <hr>
 
 **5. Address Q2-Q3 Seasonal Weakness**
 
 **Problem**:
 
-- Cohort analysis: May-Aug 2024 had worst retention (0.67-0.75%)
-  <<<<<<< HEAD
-- # Revenue analysis: Q2-Q3 2024 saw continuous decline.<br>
-- Profit analysis: Q2-Q3 2024 saw continuous decline.
-- > > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
-  > > > > > > > **Actions**:
-- Investigate **operational issues during mid-year** (shipping delays, stock-outs, quality problems)
-- Launch **seasonal campaigns in Q2-Q3** to counteract historical weakness
-- Replicate Q2 2023 success (which had strong revenue growth)-analyze what worked
-- Consider mid-year loyalty events (summer sales, exclusive previews) to boost engagement.
+- Cohort analysis: May-Aug 2024 had the lowest retention (0.67-0.75%)
+- Revenue analysis: Q2-Q3 2024 experienced saw steady continuous decline.
+
+**Actions**:
+
+- Investigate mid-year operational difficulties such as delivery delays, stocks-outs, and quality problems.
+- Launch seasonal initiatives in Q2-Q3 to address prior weakness.
+- Replicate Q2 2023’s success (which saw high sales growth). Analyzed that works
+- Consider hosting mid-year loyalty events (summer bargains, special previews) to increase engagement.
+
 <hr>
 
-<<<<<<< HEAD
-**6. Laverage Q4 Acquisition Strength**<br>
-**Problem**: Q4 shows better retention (~5%) but revenue still drops<br>
-**Opportunity**: Customers acquired in Q4 have higher quality<br>
-=======
 **6. Laverage Q4 Acquisition Strength**
 
-**Problem**: Q4 shows better retention (~5%) but profit still drops
+**Problem**: Q4 indicated improved retention (~5%) but revenue still declines.
+**Root Cause**: Insufficient activation and engagements strategies fail to convert higher-quality Q4 customers into repeat purchases despite their great retention potential.
 
-**Opportunity**: Customers acquired in Q4 have higher quality
+**Actions**:
 
-> > > > > > > c26e08ff91a48b791dcb0329f33d8aa824fcc47f
-> > > > > > > **Actions**:
-
-- Double down on Q4 marketing - allocate 40% of annual acquisition budged here
-- Analyze what makes Q4 customers different (holiday shoppers vs brand loyalist)
-- Extend Q4 engagement into Q1 with 'New Year refresh' campaigns
-- Track Q4 cohorts into 2025 to see if 5% retention sustains<br>
+- Double focus on Q4 on marketing and devote 40% of the annual acquisition budget here.
+- Analyze what differentiate Q4 customers (Christmas shoppers versus brand loyalist)
+- Increase Q4 engagement into Q1 with ‘New year refresh’ advertisement
+- Track Q4 cohorts through 2025 to evaluate if 5% retention is sustained.
 
 ---
 
@@ -324,7 +317,7 @@ By connectiong when customers leave (Cohort Analysis) with who is valuable (RFM 
 
 - The 3-5% who return become our most generating revenue customers (Champions)
 - The 95% who churn immediately drag down overall revenuable
-- 54% of current revenue comes from customers who are already disengaging
+- 53% of current revenue comes from customers who are already disengaging
 - Without intervention, shrinking cohorts + poor retention = continued revenue decline
 
 **The path forward is clear**: Transform from a transactional business to a relationship-driven model, where customer retention becomes they primary driver of growth
