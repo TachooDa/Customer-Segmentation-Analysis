@@ -188,4 +188,22 @@ FROM v_sales_cleaned AS s
 LEFT JOIN store_data AS sd ON s.store_id = sd.store_id
 WHERE s.date BETWEEN '2023-01-01' AND '2024-12-31'
 GROUP BY 1,2,3
-ORDER BY product_returned DESC
+ORDER BY product_returned DESC;
+
+
+-- AB TEST
+SELECT
+	ab.ab_group,
+	count(DISTINCT ab.customer_id ) AS customers
+FROM (
+SELECT
+	customer_id,
+	(CASE WHEN right(customer_id,6)::int % 2 = 0 THEN 'Control Group' ELSE 'Test Group' end) AS ab_group
+FROM rfm_segment
+) AS ab
+GROUP BY ab.ab_group ;
+
+SELECT
+*
+
+FROM rfm_segment 
